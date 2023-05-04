@@ -26,12 +26,14 @@ function Weekday(props: WeekdayProps): JSX.Element {
         source={
           props.weather === 'clear_day'
             ? require('../../assets/sol.png')
-            : props.weather === 'cloudy_day'
+            : props.weather === 'cloud'
             ? require('../../assets/Bigdrops.png')
-            : require('../../assets/Cloud.png')
+            : props.weather === 'cloudly_day'
+            ? require('../../assets/Cloud.png')
+            : require('../../assets/nuvens.png')
         }
       />
-      <Text style={styles.Text}>{props.max}°ᶜ  </Text>
+      <Text style={styles.Text}>{props.max}°ᶜ </Text>
       <Text style={styles.Text}>{props.min}°ᶜ</Text>
     </View>
   );

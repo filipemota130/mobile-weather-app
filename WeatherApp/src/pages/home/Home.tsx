@@ -28,6 +28,7 @@ export const Home = () => {
       code: '455830',
     },
   ];
+
   const [forecast, setforecast] = useState([]);
   const [SelectedValue, setSelectedValue] = React.useState('455880');
 
@@ -67,7 +68,7 @@ export const Home = () => {
   const getWeather = async () => {
     try {
       const {data} = await api.get(
-        `/weather?woeid=${SelectedValue}&key=b9f0051b`,
+        `/weather?woeid=${SelectedValue}&key=8272501e`,
       );
       return data;
     } catch (error) {
@@ -83,7 +84,7 @@ export const Home = () => {
     setData(response?.results);
     setforecast(response?.results?.forecast);
     forecast.forEach((item: dataT) => {
-      if (item.date === ApiData.date.slice(0, 5)) {
+      if (item?.date === ApiData?.date?.slice(0, 5)) {
         setToday(item);
         setIsRaining(today.condition);
       }
@@ -92,7 +93,7 @@ export const Home = () => {
 
   useEffect(() => {
     handleWeather();
-  }, [SelectedValue]);
+  }, [SelectedValue, forecast]);
 
   return (
     <LinearGradient

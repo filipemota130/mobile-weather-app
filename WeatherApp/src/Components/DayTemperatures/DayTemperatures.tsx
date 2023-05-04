@@ -50,7 +50,11 @@ function DayTemperatures(props: DayTemperaturesProps): JSX.Element {
           {getMonthInText(props.date)}
         </Text>
       </View>
-      <View />
+      <View>
+        <Text style={{textAlign: 'center', color: 'white'}}>
+          Work in Progress...
+        </Text>
+      </View>
     </View>
   );
 }
