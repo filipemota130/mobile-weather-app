@@ -7,7 +7,7 @@
 
 Comandos de execução:
   cd mobile-weather-app/weatherApp
-  <br>
+  <br/>
   npm i
-  <br>
+  <br/>
   npm run dev
