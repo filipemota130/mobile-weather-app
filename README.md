@@ -8,8 +8,6 @@
 Comandos de execução:
 ```bash
   cd mobile-weather-app/weatherApp
-  <br/>
   npm i
-  <br/>
   npm run dev
 ```
