@@ -1,7 +1,7 @@
 # Como rodar
 
 ## Requisitos
-- node >= v12.0.0
+- Node.js >= v12.0.0
 - Android studio 
 - Android SDK version: >= 33
 
