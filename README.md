@@ -1,11 +1,11 @@
-# Como rodar
+#Como rodar
 
-## requisitos
+## Requisitos
 - node >= v12.0.0
 - Android studio 
 - Android SDK version: >= 33
 
-Comandos de execução:
+## Comandos de execução:
 ```bash
   cd mobile-weather-app/weatherApp
 ```
