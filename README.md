@@ -1,4 +1,4 @@
-#Como rodar
+# Como rodar
 
 ## Requisitos
 - node >= v12.0.0
