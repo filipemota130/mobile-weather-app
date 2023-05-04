@@ -68,7 +68,7 @@ export const Home = () => {
   const getWeather = async () => {
     try {
       const {data} = await api.get(
-        `/weather?woeid=${SelectedValue}&key=8272501e`,
+        `/weather?woeid=${SelectedValue}&key=b9b40610`,
       );
       return data;
     } catch (error) {
